@@ -13,7 +13,7 @@ class Platform(pygame.sprite.Sprite):
         super().__init__()
  
         self.image = pygame.Surface([width, height])
-        self.image.fill(constants.PINK)
+        self.image.fill(constants.BLUEGREEN)
         self.rect = self.image.get_rect()
 
 class Level():
