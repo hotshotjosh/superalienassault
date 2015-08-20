@@ -32,31 +32,12 @@ class Level():
         """ Constructor. Pass in a handle to player. Needed for when moving
             platforms collide with the player. """
         self.platform_list = pygame.sprite.Group()
-        #self.enemy_list = pygame.sprite.Group()
-        #self.bullet_list = pygame.sprite.Group()
-        #self.bullet_casing_list = pygame.sprite.Group()
         self.player = player
-        #self.enemy = enemy
- 
-        # How far this world has been scrolled left/right
-        #self.world_shift = 0
  
     # Update everything on this level
     def update(self):
         """ Update everything in this level."""
-        #self.check_collisions()
         self.platform_list.update()
-        #self.enemy_list.update()
-        #self.bullet_list.update()
-        #self.bullet_casing_list.update()
-
-    #def check_collisions(self):
-    #    block_hit_list = pygame.sprite.groupcollide(self.enemy_list, self.bullet_list, True, False)
-        #for block in block_hit_list:
-
-            # Adjust player's position based on if they hit the left
-            # or right side of the object
-
  
     def draw(self, screen):
         """ Draw everything on this level. """
